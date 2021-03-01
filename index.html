@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="assets/scripts/master.js"></script>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="assets/styles/estilo.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+		<script
+			src="https://kit.fontawesome.com/4a25b18ada.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+		<title>Welcome</title>
+	</head>
+	<body>
+		<canvas class="background"></canvas>
+		<div id="content" class="content">
+			<div id="card-1" class="general">
+				<div class="description">
+					<div class="logo">
+						<i id="logo-index" class="fas fa-home icon"></i>
+					</div>
+					<div class="name">Index</div>
+				</div>
+				<div class="url-container">
+					<div class="url-text-container-index">
+						<p id="text" class="placeholder">victorav@home:~$</p>
+						<p id="words"></p>
+					</div>
+				</div>
+			</div>
+			<div id="card-2" class="email">
+				<div class="description">
+					<div class="logo">
+						<i id="logo-email" class="fas fa-envelope-square icon"></i>
+					</div>
+					<div class="name">Email</div>
+				</div>
+				<div class="url-container">
+					<div class="url-text-container-email" onclick="window.location.href='mailto:victoravtr@gmail.com';">
+						<i id="text" class="fas fa-envelope"></i>
+						<a id="text" href="mailto:victoravtr@gmail.com">victoravtr@gmail.com</a>
+					</div>
+				</div>
+			</div>
+			<div id="card-3" class="github">
+				<div class="description">
+					<div class="logo">
+						<i id="logo-github" class="fab fa-github-square icon"></i>
+					</div>
+					<div class="name">Github</div>
+				</div>
+				<div class="url-container">
+					<div class="url-text-container-github" onclick="window.open('https://github.com/victoravtr', '_blank');">
+						<i id="text" class="fab fa-github-alt"></i>
+						<a id="text" href="https://github.com/victoravtr" target="blank">github.com/victoravtr</a>
+					</div>
+				</div>
+			</div>
+			<div id="card-4" class="linkedin">
+				<div class="description">
+					<div class="logo">
+						<i id="logo-linkedin" class="fab fa-linkedin icon"></i>
+					</div>
+					<div class="name">Linkedin</div>
+				</div>
+				<div class="url-container">
+					<div class="url-text-container-linkedin" onclick="window.open('https://www.linkedin.com/in/victor-areces-valdes/', '_blank');">
+						<i id="text" class="fab fa-linkedin-in"></i>
+						<a id="text" href="https://www.linkedin.com/in/victor-areces-valdes/" target="blank">linkedin.com/victoravtr</a>
+					</div>
+				</div>
+			</div>
+			<div id="card-5" class="portfolio">
+				<div class="description">
+					<div class="logo">
+						<i id="logo-portfolio" class="fas fa-folder icon"></i>
+					</div>
+					<div class="name">Portfolio</div>
+				</div>
+				<div class="url-container">
+					<div class="url-text-container-portfolio" onclick="window.open('https://portfolio.victorav.me', '_blank');">
+						<i id="text" class="fas fa-folder-open"></i>
+						<a id="text" href="https://portfolio.victorav.me" target="blank">portfolio.victorav.me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		new TypeIt("#words", {
+			strings: [" developer", " system administrator", " pentester", "welcome! :)"],
+			speed: 200,
+			cursorSpeed: 1000,
+			nextStringDelay: 1500,
+			loop: false,
+			breakLines: false,
+			waitUntilVisible: true,
+		}).go();
+	</script>
+</html>
